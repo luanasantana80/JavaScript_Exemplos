@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Calculando a média do aluno </title>
+		<meta charset="UTF-8">
+			<script>
+							 
+                function validar(){
+					var nota1=document.f_parc.f_n.value;
+					if (nota1 < 0){
+						alert("Digite uma nota válida");
+					}else{
+						alert("Valor sera de "+ nota1);
+					}
+	   		   
+				}	
+				function media1(){
+					var n1=document.f_parc.f_n.value;
+					var resu;
+					n1=parseInt(n1);
+					resu=(n1/1)
+					alert("O valor ficara em "+ resu);
+				}
+				function media2(){
+					var n1=document.f_parc.f_n.value;
+					var resu;
+					n1=parseInt(n1);
+					resu=(n1/2)
+					alert("O valor ficara em "+ resu);
+				}
+				function media3(){
+					var n1=document.f_parc.f_n.value;
+					var resu;
+					n1=parseInt(n1);
+					resu=(n1/3)
+					alert("O valor ficara em "+ resu);
+				}	
+				function media4(){
+					var n1=document.f_parc.f_n.value;
+					var resu;
+					n1=parseInt(n1);
+					resu=(n1/4)
+					alert("O valor ficara em "+ resu);
+				}	
+				function media5(){
+					var n1=document.f_parc.f_n.value;
+					var resu;
+					n1=parseInt(n1);
+					resu=(n1/5)
+					alert("O valor ficara em "+ resu);
+				}	
+			
+			</script>
+	</head>
+	<body>
+		<center>	
+			<h1> Calculando valores de parcela</h1>
+	   		<form name="f_parc" method="#" action="#" onsubmit=" return validar()">
+				<p><label> VALOR TOTAL:  </label><input type="text" name="f_n" id="f_in" >
+				<p><input type="submit" value="Validar Valor">
+				<P><label> DESEJA PARCELAR EM QUANTAS VEZES?(saiba que só é possivel parcelar de 1x ate 5x) </label></P>
+				<input type="button" value="1x" onclick="media1()">
+				<input type="button" value="2x" onclick="media2()">
+				<input type="button" value="3x" onclick="media3()">
+				<input type="button" value="4x" onclick="media4()">
+				<input type="button" value="5x" onclick="media5()">
+			</form>
+	   </center>
+		
+    </body>
+</html>

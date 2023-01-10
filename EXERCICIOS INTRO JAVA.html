@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Calculando a média do aluno </title>
+		<meta charset="UTF-8">
+			<script>
+							 
+                function validar(){
+					var min=document.f_parc.f_n.value;
+                    if (isNaN(min)){
+                        alert("Não é numero!!")
+                    }
+                }//TESTE PARA HAVER SE É UM NUMERO
+                function multi(){
+                    num=parseFloat(document.f_parc.f_id.value);
+                    alert(num);
+                }//CONVERTER UMA STRING EM VALOR
+                function int(){
+                    valor=parseInt(document.f_parc.f_i.value);
+                    alert(valor);
+                }//CONTA SO ATE O PONTO OU VIRGULA
+                function rai(){
+                    raiu=parseInt(document.f_parc.f_d.value,2);
+                    alert(raiu);
+                }//HAVER O RAIO
+                window.open("https://www.google.com","","width=550, height=420,menubar=no");
+                document.write(window.location.href);
+                //window.location.href="EXERCICIO INTRO JAVA.html"
+			</script>
+	</head>
+	<body>
+		<center>	
+			<h1> valor</h1>
+	   		<form name="f_parc" method="#" action="#" onsubmit=" return validar()">
+				<p><label> NUMERO 0 ex(5201 / letra):  </label><input type="text" name="f_n">
+
+				<p><label> NUMERO 1 ex(12.252):  </label><input type="text" name="f_id">
+
+                <p><label> NUMERO 3 ex(123.456):  </label><input type="text" name="f_i">
+
+                <p><label> NUMERO 4 ex(123{,2}):  </label><input type="text" name="f_d">
+
+                <p onMouseDown='self.print()'>imprimir documento</p>
+
+				<p><input type="submit" value="VALIDAR">
+                <p><input type="button" value="parseFloat" onclick="multi()">
+                <p><input type="button" value="parseInt" onclick="int()">
+                <p><input type="button" value="parseintraiu" onclick="rai()">
+                <p><input type="button" value="recarregar" onclick="reca()">
+
+			</form>
+            <form>
+                <p><input type="submit" value="fechar" onclick="window.close()">
+                <p></p><a href="javascript:window.location.reload();">atualizar pagina</a>
+                <p><a href="javascript:window.history.go(1)">AVANÇAR</a></p>
+                <p><a href="javascript:window.history.go(-1)">VOLTAR</a></p>
+                <p><a href="javascript:window.history.back()">VOLTAR</a></p>
+            </form>
+	   </center>
+		
+    </body>
+</html>

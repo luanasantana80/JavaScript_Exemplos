@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Calculando a média do aluno </title>
+		<meta charset="UTF-8">
+			<script>
+							 
+                function validar(){
+					var nome=document.f_parc.f_n.value;
+					partes=nome.split("");
+                   
+
+                    document.write(partes[0]+ "<BR>");
+                    document.write(partes[1]+ "<BR>");
+                    document.write(partes[2]);
+
+				}
+
+
+                
+			</script>
+	</head>
+	<body>
+		<center>
+			<h1> Vamos que vamos #2</h1>
+	   		<form name="f_parc" method="#" action="#" onsubmit=" return validar()">
+				<p><label> NOME:  </label><input type="text" name="f_n" id="f_in" >
+
+				<p><input type="submit" value="VAMO SEPARAR">
+			</form>
+	   </center>
+		
+    </body>
+</html>
